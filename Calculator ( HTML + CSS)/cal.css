@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+
+
+
+body
+{
+    background-image: url("https://media.istockphoto.com/photos/abstract-exhibition-background-with-ultraviolet-neon-lights-glowing-picture-id1298834196?b=1&k=20&m=1298834196&s=170667a&w=0&h=YHZkqjKMZishTRcAcqkn9FQGKc_DFs7HP0cRi3yJBz4=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.container
+{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 1000px;
+    padding: 50px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+    cursor: pointer;
+    
+}
+
+.container .calc
+{
+    position: relative;
+    display: grid;
+}
+
+.container .calc .value
+{
+    grid-column: span 4;
+    height: 150px;
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    background: rgba(255,255,255,0.07);
+    
+}
+
+.container .calc span
+{
+    display: grid;
+    place-items: center;
+    width: 75px;
+    height: 80px;
+    border-left: 1px solid rgba(255,255,255,0.05);
+    border-right: 1px solid rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+
+}
+.inp{
+    font-size: 25px;
+}
+.inp:hover
+{
+    color:black;
+    background-color: rgba(255,255,255,0.25);
+}
+/*.inp:active{
+    color:#fff;
+    background-color: #000;
+    font-size: 150px;
+}
